@@ -53,20 +53,20 @@ Bracket expressions are used to denote what characters we are trying to match. W
 
 
 
-
-
-
 ### Character Classes
 Character Classes allow developers to write RegEx in more compact ways. Inside our email RegEx there is one character class
 
 Within the Bracket Expression [\da-z\.-] we have '\d' which is a character class that denotes any numbers. It's the same as out the '0-9' inside the other bracket [a-z0-9_\.-]
 
 ### The OR Operator
+The OR operator is a RegEx tool designed to implement a logical 'or' operation. It is normally denoted with '|'
+
+In our RegEx above we don't have any Or Operators to show
 
 ### Flags
 
 ### Character Escapes
-Character Escapes are used to denote characters that we want to match but might not register as matching characters like '{}' curly brackets or even '.' periods and generally are denoted with '\' back slashes
+Character Escapes are used to denote characters that we want to match but might not register as matching characters like '{}' curly brackets or even '.' which are qualifiers. We generally  denote with '\' back slashes
 
 In our regex we have this happen 3 times (each on the same character). In the regex 2 times in bracket expressions and once in between them we have '\.' This says that we want to recognize the period as a character we are also matching
 
