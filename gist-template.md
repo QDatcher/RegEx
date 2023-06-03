@@ -64,6 +64,9 @@ The OR operator is a RegEx tool designed to implement a logical 'or' operation. 
 In our RegEx above we don't have any Or Operators to show
 
 ### Flags
+Flags are  optional parameters in a RegEx that allows developers to modify the RegEx's behavior of searching. They are placed at the end of the regex
+
+There are no Flags inside our email RegEx
 
 ### Character Escapes
 Character Escapes are used to denote characters that we want to match but might not register as matching characters like '{}' curly brackets or even '.' which are qualifiers. We generally  denote with '\' back slashes
@@ -75,5 +78,3 @@ In our regex we have this happen 3 times (each on the same character). In the re
 A young junior full stack development student learning the ropes of the industry / technology
 
 Github Profile - https://github.com/QDatcher
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
