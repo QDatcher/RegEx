@@ -45,9 +45,9 @@ The {2,6}
 ### Bracket Expressions
 Bracket expressions are used to denote what characters we are trying to match. We can make a range of alphabets and numbers and also include special characters if we want as well. Below I will explain the 3 bracket expressions in our email RegEx
 
-1. [a-z0-9_\.-] - This will try to match anything that has any lowercase letter in the alphabet, numbers between 0-9 &/or the characters '_', '\', '.', and '-'
+1. [a-z0-9_\.-] - This will try to match anything that has any lowercase letter in the alphabet, numbers between 0-9 &/or the characters '_', '.', and '-'
 
-2. [\da-z\.-] - This will try to match anything with numbers in it, any lowercase alphabets, &/or the characters '\', '.', and  '-'
+2. [\da-z\.-] - This will try to match anything with numbers in it, any lowercase alphabets, &/or the characters  '.', and  '-'
 
 3. [a-z\.] - This will match anything with lowercase letters and/or the characters '\', or  '.'
 
@@ -66,7 +66,9 @@ Within the Bracket Expression [\da-z\.-] we have '\d' which is a character class
 ### Flags
 
 ### Character Escapes
-Character Escapes are used to denote characters that aren't matching
+Character Escapes are used to denote characters that we want to match but might not register as matching characters like '{}' curly brackets or even '.' periods and generally are denoted with '\' back slashes
+
+In our regex we have this happen 3 times (each on the same character). In the regex 2 times in bracket expressions and once in between them we have '\.' This says that we want to recognize the period as a character we are also matching
 
 ## Author
 
