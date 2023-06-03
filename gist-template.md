@@ -4,11 +4,10 @@ Nowadays it's important to have an email as when signing up for most websites or
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
-The RegEx below is the one we will be covering today. It is again an email formatted RegEx. It just validates the format of the email in order to mitigate any potential mistakes
+The RegEx below is the one we will be covering today. It is again an email formatted RegEx. It just validates the format of the email in order to mitigate any potential mistakes. The first group which is our handle asks for 1 or more characters that can be lowercase alphabets, numbers, and the characters ('_', '.', '-'). Between the first 2 groups there needs to be an '@'. The second group looking for email service (yahoo, gmail, etc.)asks for pretty much the same as the first group excluding the underscore '_'. In between the second and third group there needs to be a period '.'. The final group will only match if the string is in the 2-6 range of characters and can only be composed of lowercase alphabets and periods '.'
 
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+The Email Regex  =  /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -41,6 +40,16 @@ The {2,6}
 
 
 ### Grouping Constructs
+Grouping Constructs allow developers to seperate what they are trying to match in RegEx. They are denoted by wraping the section in '()' parentheses. Below I'll show the 3 times grouping constructs were used.
+
+1. ([a-z0-9_\.-]) - This will try to match anything that has any lowercase letter in the alphabet, numbers between 0-9 &/or the characters '_', '.', and '-'
+
+2. ([\da-z\.-]) - This will try to match anything with numbers in it, any lowercase alphabets, &/or the characters  '.', and  '-'
+
+3. ([a-z\.]) - This will match anything with lowercase letters and/or the characters '\', or  '.'
+
+Each of these can searching for different phrases to match to and it's only possible because we wrapped each group with grouping constructs
+
 
 ### Bracket Expressions
 Bracket expressions are used to denote what characters we are trying to match. We can make a range of alphabets and numbers and also include special characters if we want as well. Below I will explain the 3 bracket expressions in our email RegEx
