@@ -28,15 +28,15 @@ Anchors instead of talking about matching characters, they instead will reveal s
 Inside the RegEx the '^' character denotes the beginning of of the expression, while the '$' denotes the end of the expression.
 
 ### Quantifiers
-Quantifiers specify how many times a character, group, or character class must be present in the input for a match to be accepted. There are 2 types of qualifiers, greedy and lazy. While greedy qualifiers will try to match anything into in between the first and last character it is looking for, lazy qualifiers will mak=
+Quantifiers specify how many times a character, group, or character class must be present in the input for a match to be accepted. There are 2 types of qualifiers, greedy and lazy. Qualifiers are naturally greed meaning they will try to match as many occurences of a pattern as possible while lazy will match as few as possible. To denote a lazy qualifier, need to add a '?' question mark after the initial qualifier
 
-Greedy Example:
+Inside the email RegEx we have 3 qualifiers as shown below
 
-If we have the RegEx '<.+>' where the '+'
+1. ([a-z0-9_\.-]+) - The '+' tells us to match we need one or more of the characters included in the bracket expression
 
-In this case we have a quantifier here: ([a-z\.]{2,6})
+2. ([\da-z\.-]+) - The '+' says the same as the example above
 
-The {2,6} 
+3. ([a-z\.]{2,6}) - The '{2,6}' says that this group's match needs between 2 to 6 characters (matching whatever the expression inside the backet expression requires)
 
 
 ### Grouping Constructs
